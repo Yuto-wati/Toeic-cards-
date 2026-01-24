@@ -12,8 +12,8 @@
   <style>
     body {
       font-family: 'Noto Sans JP', system-ui, sans-serif;
-      background-color: #f1f5f9; /* Slate-100 consistent with other files */
-      color: #334155; /* Slate-700 consistent with other files */
+      background-color: #f1f5f9; /* Slate-100 */
+      color: #334155; /* Slate-700 */
     }
     .font-poppins { font-family: 'Poppins', system-ui, sans-serif; }
     
@@ -30,6 +30,7 @@
     .delay-100 { animation-delay: 0.1s; }
     .delay-200 { animation-delay: 0.2s; }
     .delay-300 { animation-delay: 0.3s; }
+    .delay-500 { animation-delay: 0.5s; }
 
     /* Card Hover Effect */
     .hover-card {
@@ -62,7 +63,7 @@
     </header>
 
     <!-- Philosophy -->
-    <section class="bg-white border border-slate-200 rounded-3xl p-8 md:p-10 shadow-sm hover:shadow-md transition-shadow fade-in-up delay-100">
+    <section class="bg-white border border-slate-200 rounded-3xl p-8 md:p-10 shadow-sm hover-card transition-shadow fade-in-up delay-100">
       <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
         <div class="space-y-4 flex-1">
           <h2 class="text-2xl md:text-3xl font-black text-slate-800">このサイトの思想</h2>
@@ -109,8 +110,60 @@
       </div>
     </section>
 
+    <!-- NEW SECTION: TOEIC Message -->
+    <section class="bg-indigo-50/30 border border-indigo-100 rounded-3xl p-8 md:p-10 shadow-sm hover-card fade-in-up delay-200">
+        <div class="max-w-4xl mx-auto space-y-8">
+            <h2 class="text-2xl md:text-3xl font-black text-slate-800 text-center">
+                TOEICで点数を取るために必要な、<br class="md:hidden"><span class="text-indigo-600">最低条件</span>
+            </h2>
+            
+            <div class="space-y-6 text-slate-600 font-bold leading-relaxed text-sm md:text-base">
+                <p>
+                    TOEICの勉強をしているのに、なかなか点数が伸びない。<br class="hidden md:block">
+                    その理由の多くは、努力不足ではありません。
+                </p>
+                <p>
+                    原因は、<span class="bg-white text-indigo-700 px-2 py-0.5 rounded border border-indigo-100 shadow-sm">最低限の土台</span>がまだ築かれていないことにあります。
+                </p>
+                <p>
+                    中学・高校レベルの英語がきちんと身について、はじめて人は「自分の力で走り出す」ことができます。<br class="hidden md:block">
+                    この土台がないまま、問題集を何度も解いても、それは一時的な暗記力に過ぎません。
+                </p>
+                <p>
+                    同じミスを繰り返さないために必要なのは、<br>
+                    <span class="text-indigo-700 border-b-2 border-indigo-100">覚えることではなく、理解することです。</span>
+                </p>
+                <p>
+                    語彙でも、文法でも、それは同じ。<br>
+                    意味や仕組みを理解したうえで覚えるからこそ、それは「使える英語」になります。
+                </p>
+                <p>
+                    実際、大学受験レベルの英語を扱える力があれば、<br>
+                    TOEICでは問題集を解き続けるだけで自然と点数は伸び、600点を下回ることはほとんどありません。
+                </p>
+                <p>
+                    TOEIC特有のビジネス表現や形式は、<br>
+                    8〜9割を目指す段階になって、はじめて意味を持つものです。
+                </p>
+                <p>
+                    中級レベルから上級レベルへ進むための最短ルートは、<br>
+                    TOEIC対策ではなく、<span class="bg-white text-indigo-700 px-2 py-0.5 rounded border border-indigo-100 shadow-sm">英語力そのものを鍛えること</span>。
+                </p>
+                <div class="pt-4 border-t border-indigo-100/50">
+                    <p>
+                        やるべきことは、実はとてもシンプルです。<br>
+                        理解して、積み上げて、あとは毎日コツコツ進むだけ。
+                    </p>
+                    <p class="text-center font-black text-slate-800 mt-6 text-lg">
+                        このサイトは、そのための「地図」として作られています。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Main Nav (3 cards) -->
-    <section class="space-y-8 fade-in-up delay-200">
+    <section class="space-y-8 fade-in-up delay-300">
       <h2 class="text-2xl font-black text-center text-slate-800 flex items-center justify-center gap-2">
         <span class="text-3xl">📚</span> 学習コンテンツ
       </h2>
@@ -190,7 +243,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-xs text-slate-400 font-bold py-10 border-t border-slate-200 mt-12 fade-in-up delay-300">
+    <footer class="text-center text-xs text-slate-400 font-bold py-10 border-t border-slate-200 mt-12 fade-in-up delay-500">
       English Core Image Series <br>
       <span class="font-normal opacity-70">Created with AI Assistant</span>
     </footer>

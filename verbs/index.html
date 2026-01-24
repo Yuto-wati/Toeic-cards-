@@ -11,12 +11,10 @@
   <style>
     body {
       font-family: 'Noto Sans JP', system-ui, sans-serif;
-      background-color: #f1f5f9;
+      background-color: #f8fafc;
       color: #334155;
     }
     .font-poppins { font-family: 'Poppins', system-ui, sans-serif; }
-
-    /* Animation Definitions */
     .fade-in-up {
         animation: fadeInUp 0.8s ease-out forwards;
         opacity: 0;
@@ -27,10 +25,9 @@
     }
     .delay-100 { animation-delay: 0.1s; }
     .delay-200 { animation-delay: 0.2s; }
-
-    /* Card Hover Effect */
+    
     .hover-card {
-        transition: all 0.3s ease;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
     .hover-card:hover {
         transform: translateY(-4px);
@@ -41,9 +38,9 @@
 <body class="p-6 md:p-12">
   <div class="max-w-6xl mx-auto space-y-12">
 
-    <!-- Header -->
+    <!-- Header: デザイン統一 (Slate-800 badge) -->
     <header class="text-center space-y-6 fade-in-up">
-      <div class="inline-block bg-blue-50 text-blue-700 px-5 py-2 rounded-full text-xs font-black tracking-widest border border-blue-100">
+      <div class="inline-block bg-slate-800 text-white px-5 py-2 rounded-full text-xs font-black tracking-widest shadow-md font-poppins">
         VERBS SERIES
       </div>
       <h1 class="text-4xl md:text-5xl font-black text-slate-900">動詞のコア理解</h1>
@@ -52,50 +49,44 @@
       </p>
     </header>
 
-    <!-- Concept Section -->
-    <section class="bg-white border border-slate-200 rounded-3xl p-8 md:p-10 shadow-sm hover-card fade-in-up delay-100 relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full -mr-6 -mt-6 opacity-50 pointer-events-none"></div>
-      
+    <!-- Concept Section: Indigo Accent -->
+    <section class="bg-white border border-slate-200 border-l-[8px] border-l-indigo-400 rounded-3xl p-8 md:p-10 shadow-sm hover-card fade-in-up delay-100 relative overflow-hidden group">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-50 rounded-bl-full -mr-6 -mt-6 opacity-50 pointer-events-none group-hover:bg-indigo-100 transition-colors"></div>
       <div class="space-y-4 relative">
-        <h2 class="text-2xl font-black text-slate-800 flex items-center gap-2">
+        <h2 class="text-2xl font-black text-slate-800 flex items-center gap-2 group-hover:text-indigo-900 transition-colors">
           <span class="text-2xl">💡</span> 考え方
         </h2>
-        <p class="text-base font-bold text-slate-600 leading-relaxed">
+        <p class="text-base font-bold text-slate-600 leading-relaxed group-hover:text-indigo-800 transition-colors">
           基本動詞は「意味が多い」のではなく、<br>
-          <span class="text-blue-700 bg-blue-50 px-2 py-0.5 rounded mx-1">一つのコア</span>が文脈によって姿を変えているだけです。
+          <span class="text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded mx-1 group-hover:bg-white transition-colors">一つのコア</span>が文脈によって姿を変えているだけです。
         </p>
       </div>
     </section>
 
-    <!-- Content Grid -->
     <section class="grid md:grid-cols-2 gap-6 fade-in-up delay-200">
-      
-      <!-- get -->
-      <a href="./get/" class="block bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card group">
-        <div class="flex items-center justify-between mb-2">
-            <h3 class="text-3xl font-black text-blue-600 group-hover:text-blue-700 transition-colors font-poppins">get</h3>
-        </div>
-        <p class="text-sm font-bold text-slate-500 mb-4">
-            コアイメージ：ある状態への変化（獲得・到達・変化）
+
+      <!-- GET: Blue Theme -->
+      <a href="./get/" class="block bg-white border border-slate-200 border-l-[8px] border-l-blue-400 rounded-3xl p-8 shadow-sm hover-card hover:border-blue-500 hover:bg-blue-50 group">
+        <h3 class="text-3xl font-black text-slate-800 group-hover:text-blue-800 transition-colors font-poppins mb-2">get</h3>
+        <p class="text-sm font-bold text-slate-500 mb-4 group-hover:text-blue-700 transition-colors">
+          コアイメージ：ある状態への変化（獲得・到達・変化）
         </p>
-        <p class="text-sm font-black text-blue-600 flex items-center gap-1">
-            完全解説へ
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-        </p>
+        <p class="text-sm font-black text-blue-600 group-hover:text-blue-800 transition-colors">完全解説へ</p>
       </a>
 
-      <!-- Placeholder for other verbs -->
-      <div class="bg-slate-50 border border-slate-200 border-dashed rounded-3xl p-8 flex flex-col justify-center items-center text-center opacity-75">
-        <p class="font-poppins text-2xl font-black text-slate-300 mb-2">take / have / go...</p>
-        <p class="text-sm font-bold text-slate-400">Coming Soon</p>
-      </div>
+      <!-- TAKE: Emerald Theme -->
+      <a href="./take/" class="block bg-white border border-slate-200 border-l-[8px] border-l-emerald-400 rounded-3xl p-8 shadow-sm hover-card hover:border-emerald-500 hover:bg-emerald-50 group">
+        <h3 class="text-3xl font-black text-slate-800 group-hover:text-emerald-800 transition-colors font-poppins mb-2">take</h3>
+        <p class="text-sm font-bold text-slate-500 mb-4 group-hover:text-emerald-700 transition-colors">
+          コアイメージ：主体的に取り込み、自分の側に引き寄せる
+        </p>
+        <p class="text-sm font-black text-emerald-600 group-hover:text-emerald-800 transition-colors">完全解説へ</p>
+      </a>
 
     </section>
 
-    <!-- Footer -->
     <footer class="text-center text-xs text-slate-400 font-bold py-10 border-t border-slate-200 mt-8 fade-in-up delay-200">
-      <a href="../" class="inline-flex items-center gap-2 hover:text-blue-600 transition-colors">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+      <a href="../" class="inline-flex items-center gap-2 hover:text-slate-800 transition-colors">
         トップへ戻る
       </a>
     </footer>

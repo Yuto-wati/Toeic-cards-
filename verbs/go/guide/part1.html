@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -7,36 +8,98 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
   <style>
-    body { font-family: 'Noto Sans JP', system-ui, sans-serif; background-color: #f1f5f9; color: #334155; line-height: 1.7; }
-    .font-poppins { font-family: 'Poppins', system-ui, sans-serif; }
-    
+    body {
+      font-family: 'Noto Sans JP', system-ui, sans-serif;
+      background-color: #f1f5f9;
+      color: #334155;
+      line-height: 1.7;
+    }
+
+    .font-poppins {
+      font-family: 'Poppins', system-ui, sans-serif;
+    }
+
     /* Animation */
-    .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
-    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
-    .delay-100 { animation-delay: 0.1s; }
-    .delay-200 { animation-delay: 0.2s; }
-    .delay-300 { animation-delay: 0.3s; }
+    .fade-in-up {
+      animation: fadeInUp 0.8s ease-out forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .delay-100 {
+      animation-delay: 0.1s;
+    }
+
+    .delay-200 {
+      animation-delay: 0.2s;
+    }
+
+    .delay-300 {
+      animation-delay: 0.3s;
+    }
 
     /* Card */
-    .hover-card { transition: all 0.3s ease; }
-    .hover-card:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
-    
+    .hover-card {
+      transition: all 0.3s ease;
+    }
+
+    .hover-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+
     /* Visuals */
-    .core-box { background-color: #eff6ff; border: 1px dashed #3b82f6; padding: 16px; border-radius: 12px; text-align: center; margin-bottom: 20px; }
-    .visual-text { display: block; font-family: monospace; color: #1e293b; font-weight: 700; margin-top: 8px; font-size: 1rem; white-space: pre-wrap; line-height: 1.4; }
-    
+    .core-box {
+      background-color: #eff6ff;
+      border: 1px dashed #3b82f6;
+      padding: 16px;
+      border-radius: 12px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .visual-text {
+      display: block;
+      font-family: monospace;
+      color: #1e293b;
+      font-weight: 700;
+      margin-top: 8px;
+      font-size: 1rem;
+      white-space: pre-wrap;
+      line-height: 1.4;
+    }
+
     /* Badges */
-    .level-badge { display: inline-block; padding: 4px 12px; border-radius: 9999px; font-size: 0.75rem; font-weight: 900; letter-spacing: 0.05em; margin-right: 8px; }
+    .level-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      margin-right: 8px;
+    }
   </style>
 </head>
+
 <body class="p-6 md:p-12">
   <div class="max-w-5xl mx-auto space-y-16">
 
     <!-- Header -->
     <header class="text-center space-y-6 fade-in-up">
-      <div class="inline-block bg-blue-600 text-white px-5 py-2 rounded-full text-xs font-black tracking-widest border border-blue-700">
+      <div
+        class="inline-block bg-blue-600 text-white px-5 py-2 rounded-full text-xs font-black tracking-widest border border-blue-700">
         GO PHRASAL VERBS
       </div>
       <h1 class="text-3xl md:text-5xl font-black text-slate-900 leading-tight">
@@ -47,6 +110,24 @@
       </p>
     </header>
 
+    <!-- Core Image -->
+    <section class="space-y-8 fade-in-up delay-100">
+      <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-md">
+        <h2 class="text-2xl font-black text-slate-800 mb-4">🎯 GOのコアイメージ（基礎）</h2>
+        <div class="core-box">
+          <p class="text-lg font-bold text-slate-700 mb-2">本質：「起点から離れる動き」</p>
+          <span class="visual-text text-xl">●━━━━→<br>（今いる場所から遠ざかる）</span>
+        </div>
+        <p class="font-bold text-slate-600 mb-4">このイメージから派生する全ての意味：</p>
+        <ul class="space-y-2 text-sm font-bold text-slate-700">
+          <li><span class="text-blue-600">行く</span>：今いる場所から離れて移動する</li>
+          <li><span class="text-blue-600">進む</span>：現在地点から前方へ離れる</li>
+          <li><span class="text-blue-600">悪くなる</span>：良い状態から離れる</li>
+          <li><span class="text-blue-600">消える</span>：存在する場所から離れる</li>
+        </ul>
+      </div>
+    </section>
+
     <!-- SECTION 0 -->
     <section class="space-y-8 fade-in-up delay-100">
       <div class="flex items-center gap-3 border-b-2 border-blue-200 pb-3">
@@ -55,14 +136,13 @@
       </div>
 
       <div class="grid md:grid-cols-2 gap-6">
-
         <!-- go up -->
         <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
           <h3 class="text-xl font-black text-blue-700 mb-2">go up</h3>
           <p class="text-xs font-bold text-slate-400 mb-4">上がる、増加する</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「上方向へ」離れて進む</p>
-            <span class="visual-text">    ● 上（上昇）<br>    ↑ up<br>━━━━━ 下</span>
+            <span class="visual-text"> ● 上（上昇）<br> ↑ up<br>━━━━━ 下</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -93,7 +173,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">下がる、沈む、減少する</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「下方向へ」離れて進む</p>
-            <span class="visual-text">    ●（高い位置）<br>    ↓ down<br>━━━━━ 下</span>
+            <span class="visual-text"> ●（高い位置）<br> ↓ down<br>━━━━━ 下</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -127,7 +207,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">外出する、消える、交際する</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：内部から「外へ離れる」</p>
-            <span class="visual-text">[内部] ━━→ 外部<br>    （out = 外へ）</span>
+            <span class="visual-text">[内部] ━━→ 外部<br> （out = 外へ）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -157,13 +237,36 @@
           </div>
         </div>
 
+        <!-- go in -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-blue-700 mb-2">go in</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">入る</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：外部から「内部へ」離れて入る</p>
+            <span class="visual-text">外部 ━━→ [内部]<br> （in = 中へ）</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">Go in and sit down.</p>
+              <p class="text-xs text-slate-500">入って座って。（内部へ進んで座って）</p>
+              <p class="font-bold mt-2">Let's go in.</p>
+              <p class="text-xs text-slate-500">中に入ろう。（内部へ進もう）</p>
+              <p class="font-bold mt-2">The sun went in.</p>
+              <p class="text-xs text-slate-500">太陽が雲に隠れた。（太陽が雲の内部へ進んだ）</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：in = 内部へ。go out（出る）の反対。
+          </div>
+        </div>
+
         <!-- go back -->
         <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
           <h3 class="text-xl font-black text-blue-700 mb-2">go back</h3>
           <p class="text-xs font-bold text-slate-400 mb-4">戻る、さかのぼる</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「後ろへ離れていく」= 元に戻る</p>
-            <span class="visual-text">現在 ━━━━→ 過去（元の位置）<br>       （back = 戻る）</span>
+            <span class="visual-text">現在 ━━━━→ 過去（元の位置）<br> （back = 戻る）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -197,7 +300,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">続ける、起こる</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「前方へ進み続ける」</p>
-            <span class="visual-text">━━━→ → → on<br>    （継続）</span>
+            <span class="visual-text">━━━→ → → on<br> （継続）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -228,7 +331,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">爆発する、鳴る、腐る、立ち去る</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：正常な状態から「離れる」変化</p>
-            <span class="visual-text">正常 ━━━━→ 異常<br>       （off = 分離）</span>
+            <span class="visual-text">正常 ━━━━→ 異常<br> （off = 分離）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -267,7 +370,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">見直す、復習する、越える</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「上を越えて」進む</p>
-            <span class="visual-text">━━━━━<br>    ↑ over（上を越える）<br>━━━━━</span>
+            <span class="visual-text">━━━━━<br> ↑ over（上を越える）<br>━━━━━</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -301,7 +404,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">通り抜ける、経験する、調べる</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：障害を「貫通して進む」</p>
-            <span class="visual-text">━━ 🚧 ━━→ 突破<br>   （through = 貫通）</span>
+            <span class="visual-text">━━ 🚧 ━━→ 突破<br> （through = 貫通）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -342,7 +445,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">先に進む、どうぞ</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「前方へ」離れて進む</p>
-            <span class="visual-text">現在地 ━━━→ 前方 ahead<br>         （先）</span>
+            <span class="visual-text">現在地 ━━━→ 前方 ahead<br> （先）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -371,7 +474,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">立ち去る、消える</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：現在地から「離脱する」変化</p>
-            <span class="visual-text">現在地 ━━━━→ 遠く<br>     （away = 離れる）</span>
+            <span class="visual-text">現在地 ━━━━→ 遠く<br> （away = 離れる）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -399,36 +502,13 @@
           </div>
         </div>
 
-        <!-- go in -->
-        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
-          <h3 class="text-xl font-black text-blue-700 mb-2">go in</h3>
-          <p class="text-xs font-bold text-slate-400 mb-4">入る</p>
-          <div class="core-box">
-            <p class="text-xs font-bold text-slate-500">コアイメージ：外部から「内部へ」離れて入る</p>
-            <span class="visual-text">外部 ━━→ [内部]<br>    （in = 中へ）</span>
-          </div>
-          <div class="space-y-4 text-sm text-slate-700">
-            <div>
-              <p class="font-bold">Go in and sit down.</p>
-              <p class="text-xs text-slate-500">入って座って。（内部へ進んで座って）</p>
-              <p class="font-bold mt-2">Let's go in.</p>
-              <p class="text-xs text-slate-500">中に入ろう。（内部へ進もう）</p>
-              <p class="font-bold mt-2">The sun went in.</p>
-              <p class="text-xs text-slate-500">太陽が雲に隠れた。（太陽が雲の内部へ進んだ）</p>
-            </div>
-          </div>
-          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
-            ポイント：in = 内部へ。go out（出る）の反対。
-          </div>
-        </div>
-
         <!-- go for -->
         <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
           <h3 class="text-xl font-black text-blue-700 mb-2">go for</h3>
           <p class="text-xs font-bold text-slate-400 mb-4">〜を取りに行く、〜を選ぶ、〜に挑戦する</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：目標に「向かって離れていく」</p>
-            <span class="visual-text">起点 ━━━→ 目標<br>     （for = 向かって）</span>
+            <span class="visual-text">起点 ━━━→ 目標<br> （for = 向かって）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -456,6 +536,248 @@
           </div>
         </div>
 
+        <!-- go + -ing -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-blue-700 mb-2">go + -ing</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">〜しに行く</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：活動の場所へ「離れて行く」</p>
+            <span class="visual-text">I go swimming every week.<br>毎週泳ぎに行きます。<br>→ ここから離れて水泳という活動へ</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold text-blue-900 mb-1">例</p>
+              <p class="font-bold">Let's go shopping.</p>
+              <p class="text-xs text-slate-500">買い物に行こう。（ここから離れてショッピングという活動へ）</p>
+              <p class="font-bold mt-2">They went fishing.</p>
+              <p class="text-xs text-slate-500">彼らは釣りに行った。（ここから離れて釣りという活動へ）</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-900 mb-1">頻出表現</p>
+              <ul class="list-disc list-inside text-xs text-slate-700 space-y-1 pl-2">
+                <li>go swimming（水泳に行く）</li>
+                <li>go shopping（買い物に行く）</li>
+                <li>go fishing（釣りに行く）</li>
+                <li>go skiing（スキーに行く）</li>
+                <li>go camping（キャンプに行く）</li>
+                <li>go hiking（ハイキングに行く）</li>
+                <li>go jogging（ジョギングに行く）</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：go + -ing は「レジャー・スポーツ活動」に使う。通勤・通学は go to work / go to school。
+          </div>
+        </div>
+
+        <!-- go + adjective -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-blue-700 mb-2">go + 形容詞</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">〜になる</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：現在の状態から「離れて」別の状態へ</p>
+            <span class="visual-text">The milk went bad.<br>牛乳が腐った。<br>→ 良い状態から離れて悪い状態へ</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold text-blue-900 mb-1">例</p>
+              <p class="font-bold">She went crazy.</p>
+              <p class="text-xs text-slate-500">彼女は気が狂った。（正常な状態から離れて異常な状態へ）</p>
+              <p class="font-bold mt-2">My phone went dead.</p>
+              <p class="text-xs text-slate-500">携帯の電池が切れた。（動作する状態から離れて停止状態へ）</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-900 mb-1">頻出の形容詞</p>
+              <ul class="list-disc list-inside text-xs text-slate-700 space-y-1 pl-2">
+                <li>go bad（腐る）</li>
+                <li>go wrong（悪くなる）</li>
+                <li>go mad（気が狂う）</li>
+                <li>go blind（盲目になる）</li>
+                <li>go deaf（耳が聞こえなくなる）</li>
+                <li>go pale（青ざめる）</li>
+                <li>go red（赤くなる）</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：goは「悪化」のニュアンスが強い。become（中立的な変化）との違いに注意。
+          </div>
+        </div>
+
+        <!-- be going to -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-blue-700 mb-2">be going to</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">〜するつもりだ、〜しそうだ</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：未来へ「向かって進んでいる」状態</p>
+            <span class="visual-text">I'm going to study abroad.<br>留学するつもりです。<br>→ 留学という未来へ向かって進んでいる</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold text-blue-900 mb-1">例</p>
+              <p class="font-bold">It's going to rain.</p>
+              <p class="text-xs text-slate-500">雨が降りそうだ。（雨という状態へ向かって進んでいる）</p>
+              <p class="font-bold mt-2">What are you going to do?</p>
+              <p class="text-xs text-slate-500">何をするつもりですか？（あなたはどこへ向かって進んでいるか）</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：be going to = すでに決まっている予定・明らかな予兆。will = その場で決めた意志・単純未来。
+          </div>
+        </div>
+
+        <!-- go forward -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-blue-700 mb-2">go forward</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">前進する</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「前方向へ」離れて進む</p>
+            <span class="visual-text">We need to go forward with this plan.<br>この計画を前進させる必要がある。<br>→
+              この計画と共に前方向へ進む必要がある</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">The project is going forward.</p>
+              <p class="text-xs text-slate-500">プロジェクトは前進している。（プロジェクトが前方向へ進んでいる）</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：forward = 前方向。go ahead とほぼ同義。
+          </div>
+        </div>
+
+        <!-- go backward(s) -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-blue-700 mb-2">go backward(s)</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">後退する</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「後ろ方向へ」離れて進む</p>
+            <span class="visual-text">We can't go backward now.<br>今さら後退できない。<br>→ 今さら後ろ方向へ進めない</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">The country is going backwards.</p>
+              <p class="text-xs text-slate-500">国が後退している。（国が後ろ方向へ進んでいる）</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：backward(s) = 後方向。「退歩・退化」のニュアンス。
+          </div>
+        </div>
+
+        <!-- go past -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-blue-700 mb-2">go past</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">通り過ぎる</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「そばを過ぎて」離れていく</p>
+            <span class="visual-text">I saw the bus go past.<br>バスが通り過ぎるのを見た。<br>→ バスがそばを過ぎて離れていくのを見た</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">Don't go past the station.</p>
+              <p class="text-xs text-slate-500">駅を通り過ぎないで。（駅のそばを過ぎて離れないで）</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：past = そばを過ぎて。go by とほぼ同義。
+          </div>
+        </div>
+
+        <!-- go beyond -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-blue-700 mb-2">go beyond</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">〜を越える、〜以上のことをする</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「〜の向こう側へ」離れて進む</p>
+            <span class="visual-text">This goes beyond my expectations.<br>これは私の期待を越えている。<br>→ これが私の期待の向こう側へ進んでいる</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">He went beyond his duty.</p>
+              <p class="text-xs text-slate-500">彼は職務以上のことをした。（彼が職務の向こう側へ進んだ）</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：beyond = 向こう側・以上。「限界を超える」イメージ。
+          </div>
+        </div>
+
+        <!-- go apart -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-blue-700 mb-2">go apart</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">バラバラになる</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「離れて」バラバラに進む</p>
+            <span class="visual-text">The team went apart.<br>チームがバラバラになった。<br>→ チームが離れて別々に進んだ</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">Things are going apart.</p>
+              <p class="text-xs text-slate-500">物事がバラバラになっている。（物事が離れて進んでいる）</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：apart = 離れて・別々に。「分裂・分散」のイメージ。
+          </div>
+        </div>
+
+        <!-- go together -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-blue-700 mb-2">go together</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">一緒に行く、調和する</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「一緒に」離れて進む</p>
+            <span class="visual-text">Let's go together.<br>一緒に行こう。<br>→ 一緒に離れて進もう</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">These colors go together well.</p>
+              <p class="text-xs text-slate-500">これらの色はよく調和する。（これらの色が一緒によく進む）</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：together = 一緒に。go with とほぼ同義。
+          </div>
+        </div>
+
+        <!-- go across -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-blue-700 mb-2">go across</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">横切る</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「横断して」離れて進む</p>
+            <span class="visual-text">Go across the street.<br>道路を横切って。<br>→ 道路を横断して進んで</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">We went across the bridge.</p>
+              <p class="text-xs text-slate-500">橋を渡った。（橋を横断して進んだ）</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：across = 横切って。「一方から他方へ」の移動。
+          </div>
+        </div>
+
+        <!-- go astray -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-blue-700 mb-2">go astray</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">道に迷う、悪の道に進む</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：正しい道から「離れて迷う」</p>
+            <span class="visual-text">The letter went astray.<br>手紙が行方不明になった。<br>→ 手紙が正しい経路から離れて迷った</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">He went astray in his youth.</p>
+              <p class="text-xs text-slate-500">彼は若い頃道を誤った。（彼が若い頃正しい道から離れた）</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：astray = 迷って・道を外れて。「逸脱」のニュアンス。
+          </div>
+        </div>
       </div>
     </section>
 
@@ -467,14 +789,13 @@
       </div>
 
       <div class="grid md:grid-cols-2 gap-6">
-
         <!-- go with -->
         <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
           <h3 class="text-xl font-black text-green-700 mb-2">go with</h3>
           <p class="text-xs font-bold text-slate-400 mb-4">〜と一緒に行く、〜と合う</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：何かと「一緒に離れていく」</p>
-            <span class="visual-text">A + B ━━━→<br>    （with = 一緒に）</span>
+            <span class="visual-text">A + B ━━━→<br> （with = 一緒に）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -505,7 +826,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">〜に入る、〜を詳しく調べる、〜に参入する</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「内部へ離れて入っていく」</p>
-            <span class="visual-text">外部 ━━→ [内部深く]<br>    （into = 内部へ）</span>
+            <span class="visual-text">外部 ━━→ [内部深く]<br> （into = 内部へ）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -539,7 +860,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">通り過ぎる、経過する、〜に従う</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「そばを通って」離れていく</p>
-            <span class="visual-text">━━━→ ● 観察者<br>  （by = そばを通る）</span>
+            <span class="visual-text">━━━→ ● 観察者<br> （by = そばを通る）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -575,7 +896,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">〜なしで済ます</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：何かなしで「離れて進む」</p>
-            <span class="visual-text">必需品 ✕ ━━→ 進む<br>    （without = なしで）</span>
+            <span class="visual-text">必需品 ✕ ━━→ 進む<br> （without = なしで）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -598,7 +919,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">〜に取り掛かる、動き回る</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「周りを回って」進む</p>
-            <span class="visual-text">━━━○━━━<br>  ↺ about（周囲）</span>
+            <span class="visual-text">━━━○━━━<br> ↺ about（周囲）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -627,7 +948,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">進む、同行する</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「沿って」進む</p>
-            <span class="visual-text">━━━→ → → along<br>    （沿って）</span>
+            <span class="visual-text">━━━→ → → along<br> （沿って）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -654,7 +975,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">回る、広まる、十分にある</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「周りを回って」進む</p>
-            <span class="visual-text">━━━○━━━<br>  ↺ around（周回）</span>
+            <span class="visual-text">━━━○━━━<br> ↺ around（周回）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -688,7 +1009,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">〜とデートする</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「〜と一緒に外へ」離れていく</p>
-            <span class="visual-text">[内部] ━━→ 外部<br>    （out with = 外へ一緒に）</span>
+            <span class="visual-text">[内部] ━━→ 外部<br> （out with = 外へ一緒に）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -711,7 +1032,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">〜に反する、〜に逆らう</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「〜に対抗して」離れていく</p>
-            <span class="visual-text">方針 ←━━ 反対方向<br>    （against = 対抗）</span>
+            <span class="visual-text">方針 ←━━ 反対方向<br> （against = 対抗）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -734,7 +1055,7 @@
           <p class="text-xs font-bold text-slate-400 mb-4">〜に同意する、〜に従う</p>
           <div class="core-box">
             <p class="text-xs font-bold text-slate-500">コアイメージ：「〜と一緒に沿って」進む</p>
-            <span class="visual-text">提案 + 自分 ━━→<br>     （along with = 沿って一緒に）</span>
+            <span class="visual-text">提案 + 自分 ━━→<br> （along with = 沿って一緒に）</span>
           </div>
           <div class="space-y-4 text-sm text-slate-700">
             <div>
@@ -751,18 +1072,289 @@
           </div>
         </div>
 
+        <!-- go ahead with -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-green-700 mb-2">go ahead with</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">〜を進める</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「〜と共に前方へ」進む</p>
+            <span class="visual-text">計画 ━━━→ 前方 ahead<br> （with = 共に）</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">We'll go ahead with the project.</p>
+              <p class="text-xs text-slate-500">プロジェクトを進めます。（プロジェクトと共に前方へ進みます）</p>
+              <p class="font-bold mt-2">Let's go ahead with the plan.</p>
+              <p class="text-xs text-slate-500">計画を進めましょう。（計画と共に前方へ進みましょう）</p>
+              <p class="font-bold mt-2">The company decided to go ahead with the merger.</p>
+              <p class="text-xs text-slate-500">会社は合併を進めることを決定した。（会社が合併と共に前方へ進むことを決めた）</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-900 mb-1">TOEIC頻出</p>
+              <p class="text-xs text-slate-700">プロジェクト推進・意思決定の文脈</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：proceed with とほぼ同義。「実行に移す」ニュアンス。
+          </div>
+        </div>
+
+        <!-- go into effect -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-green-700 mb-2">go into effect</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">発効する、施行される</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「効力の内部へ」入っていく</p>
+            <span class="visual-text">無効 ━━→ [効力の内部]<br> （into effect = 効力へ）</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">The new policy goes into effect next month.</p>
+              <p class="text-xs text-slate-500">新しい方針は来月発効します。（新方針が来月効力の内部へ進む）</p>
+              <p class="font-bold mt-2">When will the changes go into effect?</p>
+              <p class="text-xs text-slate-500">変更はいつ発効しますか？（変更がいつ効力の内部へ進むか）</p>
+              <p class="font-bold mt-2">The law went into effect last year.</p>
+              <p class="text-xs text-slate-500">その法律は昨年施行された。（法律が昨年効力の内部へ進んだ）</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-900 mb-1">TOEIC頻出</p>
+              <p class="text-xs text-slate-700">規則施行・方針変更の文脈</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：take effect とほぼ同義。「正式に有効になる」。
+          </div>
+        </div>
+
+        <!-- go wrong -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-green-700 mb-2">go wrong</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">うまくいかない、故障する</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「間違った方向へ」離れていく</p>
+            <span class="visual-text">正常 ━━━━→ 異常<br> （wrong = 間違い）</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">Something went wrong.</p>
+              <p class="text-xs text-slate-500">何かがうまくいかなかった。（何かが間違った方向へ進んだ）</p>
+              <p class="font-bold mt-2">What went wrong?</p>
+              <p class="text-xs text-slate-500">何が問題だったの？（何が間違った方向へ進んだのか）</p>
+              <p class="font-bold mt-2">The plan went wrong.</p>
+              <p class="text-xs text-slate-500">計画がうまくいかなかった。（計画が間違った方向へ進んだ）</p>
+              <p class="font-bold mt-2">If anything goes wrong, call me.</p>
+              <p class="text-xs text-slate-500">何か問題があれば、電話してください。（何かが間違った方向へ進んだら、電話して）</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-900 mb-1">TOEIC頻出</p>
+              <p class="text-xs text-slate-700">トラブル報告・問題発生の文脈</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：必ず「問題発生」のニュアンス。fail より口語的。
+          </div>
+        </div>
+
+        <!-- go according to plan -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-green-700 mb-2">go according to plan</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">計画通りに進む</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「計画に従って」進む</p>
+            <span class="visual-text">計画 ━━━→ 実行<br> （according to = 従って）</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">Everything is going according to plan.</p>
+              <p class="text-xs text-slate-500">すべて計画通りに進んでいる。（すべてが計画に従って進行している）</p>
+              <p class="font-bold mt-2">The project went according to plan.</p>
+              <p class="text-xs text-slate-500">プロジェクトは計画通りに進んだ。（プロジェクトが計画に従って進んだ）</p>
+              <p class="font-bold mt-2">If things go according to plan, we'll finish early.</p>
+              <p class="text-xs text-slate-500">計画通りに進めば、早く終わります。（物事が計画に従って進めば、早く終わる）</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-900 mb-1">TOEIC頻出</p>
+              <p class="text-xs text-slate-700">進捗報告・プロジェクト管理の文脈</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：as planned とほぼ同義。「順調な進行」を示す。
+          </div>
+        </div>
+
+        <!-- go smoothly -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-green-700 mb-2">go smoothly</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">順調に進む</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「滑らかに」進む</p>
+            <span class="visual-text">━━━→ → → smoothly<br> （滑らか）</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">The meeting went smoothly.</p>
+              <p class="text-xs text-slate-500">会議は順調に進んだ。（会議が滑らかに進んだ）</p>
+              <p class="font-bold mt-2">Everything is going smoothly.</p>
+              <p class="text-xs text-slate-500">すべて順調に進んでいる。（すべてが滑らかに進んでいる）</p>
+              <p class="font-bold mt-2">We hope the transition will go smoothly.</p>
+              <p class="text-xs text-slate-500">移行が順調に進むことを願っています。（移行が滑らかに進むことを願っている）</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-900 mb-1">TOEIC頻出</p>
+              <p class="text-xs text-slate-700">進捗報告・プロセス管理の文脈</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：smoothly = 滑らかに。「問題なく」のニュアンス。
+          </div>
+        </div>
+
+        <!-- go over budget -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-green-700 mb-2">go over budget</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">予算を超える</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「予算の上を越えて」進む</p>
+            <span class="visual-text">予算 ━━━━━<br> ↑ over<br>費用 ━━━━━</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">The project went over budget.</p>
+              <p class="text-xs text-slate-500">プロジェクトは予算を超えた。（プロジェクトが予算の上を越えて進んだ）</p>
+              <p class="font-bold mt-2">We can't go over budget.</p>
+              <p class="text-xs text-slate-500">予算を超えることはできません。（予算の上を越えて進むことはできない）</p>
+              <p class="font-bold mt-2">If we go over budget, we're in trouble.</p>
+              <p class="text-xs text-slate-500">予算を超えたら、困ったことになる。（予算の上を越えて進んだら、困る）</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-900 mb-1">TOEIC頻出</p>
+              <p class="text-xs text-slate-700">予算管理・コスト管理の文脈</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：exceed the budget と同義。「超過」を表す。
+          </div>
+        </div>
+
+        <!-- go over the details -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-green-700 mb-2">go over the details</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">詳細を確認する</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「詳細の上を越えて」進む</p>
+            <span class="visual-text">詳細 ━━━━━<br> ↑ over<br>確認 ━━━━━</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">Let's go over the details.</p>
+              <p class="text-xs text-slate-500">詳細を確認しましょう。（詳細の上を越えて進みましょう）</p>
+              <p class="font-bold mt-2">We need to go over the contract details.</p>
+              <p class="text-xs text-slate-500">契約の詳細を確認する必要がある。（契約詳細の上を越えて進む必要がある）</p>
+              <p class="font-bold mt-2">Can we go over the numbers again?</p>
+              <p class="text-xs text-slate-500">もう一度数字を確認できますか？（数字の上を再度越えて進めますか）</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-900 mb-1">TOEIC頻出</p>
+              <p class="text-xs text-slate-700">会議・書類確認の文脈</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：review より口語的。「再確認」のニュアンス。
+          </div>
+        </div>
+
+        <!-- go through with -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-green-700 mb-2">go through with</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">〜をやり遂げる</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「〜を貫通して」最後まで進む</p>
+            <span class="visual-text">計画 ━━ 障害 ━━→ 完了<br> （through = 貫通）</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">I'll go through with it.</p>
+              <p class="text-xs text-slate-500">それをやり遂げます。（それを貫通して進みます）</p>
+              <p class="font-bold mt-2">He went through with the plan.</p>
+              <p class="text-xs text-slate-500">彼は計画をやり遂げた。（彼が計画を貫通して進んだ）</p>
+              <p class="font-bold mt-2">Can you go through with this?</p>
+              <p class="text-xs text-slate-500">これをやり遂げられますか？（これを貫通して進めますか）</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-900 mb-1">TOEIC頻出</p>
+              <p class="text-xs text-slate-700">意志表明・実行力の文脈</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：「困難があっても最後まで」のニュアンス。
+          </div>
+        </div>
+
+        <!-- go hand in hand -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-green-700 mb-2">go hand in hand</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">密接に関連する</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「手と手を取って」一緒に進む</p>
+            <span class="visual-text">A + B ━━━→<br> 🤝 hand in hand</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">Quality and price go hand in hand.</p>
+              <p class="text-xs text-slate-500">品質と価格は密接に関連している。（品質と価格が手を取り合って進んでいる）</p>
+              <p class="font-bold mt-2">Success goes hand in hand with hard work.</p>
+              <p class="text-xs text-slate-500">成功は努力と密接に関連している。（成功が努力と手を取り合って進む）</p>
+              <p class="font-bold mt-2">These two factors go hand in hand.</p>
+              <p class="text-xs text-slate-500">これら2つの要素は密接に関連している。（これら2つの要素が手を取り合って進んでいる）</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-900 mb-1">TOEIC頻出</p>
+              <p class="text-xs text-slate-700">関連性・相関関係の文脈</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：慣用表現。「不可分の関係」を表す。
+          </div>
+        </div>
+
+        <!-- go out of business -->
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover-card">
+          <h3 class="text-xl font-black text-green-700 mb-2">go out of business</h3>
+          <p class="text-xs font-bold text-slate-400 mb-4">廃業する</p>
+          <div class="core-box">
+            <p class="text-xs font-bold text-slate-500">コアイメージ：「ビジネスの外へ」離れて出る</p>
+            <span class="visual-text">[ビジネス] ━━→ 外（廃業）<br> （out of = 外へ）</span>
+          </div>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div>
+              <p class="font-bold">The company went out of business.</p>
+              <p class="text-xs text-slate-500">その会社は廃業した。（会社がビジネスの外へ進んだ）</p>
+              <p class="font-bold mt-2">Many stores went out of business.</p>
+              <p class="text-xs text-slate-500">多くの店が廃業した。（多くの店がビジネスの外へ進んだ）</p>
+              <p class="font-bold mt-2">If sales don't improve, we'll go out of business.</p>
+              <p class="text-xs text-slate-500">売上が改善しなければ、廃業するだろう。（売上が改善しなければ、ビジネスの外へ進むだろう）</p>
+            </div>
+            <div>
+              <p class="font-bold text-blue-900 mb-1">TOEIC頻出</p>
+              <p class="text-xs text-slate-700">経営状況・倒産の文脈</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-slate-50 text-slate-600 text-xs rounded font-bold">
+            ポイント：close down と同義。「事業停止」を表す。
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- FOOTER LINK -->
     <div class="text-center mt-12 fade-in-up delay-300">
-      <a href="./phrasal_part2.html" class="inline-block bg-white text-blue-600 font-bold py-4 px-8 rounded-full border border-blue-200 shadow hover:shadow-lg hover:-translate-y-1 transition">
+      <a href="./phrasal_part2.html"
+        class="inline-block bg-white text-blue-600 font-bold py-4 px-8 rounded-full border border-blue-200 shadow hover:shadow-lg hover:-translate-y-1 transition">
         後編へ進む（ビジネス・多義語編） →
       </a>
     </div>
 
   </div>
 </body>
+
 </html>
-
-
